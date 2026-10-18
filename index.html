@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b38">
+  <meta name="description" content="送给酉雪云的一小片星空。一点旧时光，一些好心情，还有一页补给你的同学录。">
+  <title>酉雪云 · 一小片星空</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/hero-desktop.webp" as="image" media="(min-width: 701px)">
+  <link rel="preload" href="assets/hero-mobile.webp" as="image" media="(max-width: 700px)">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="酉雪云，返回首页"><span class="brand-star" aria-hidden="true">✧</span><span>酉雪云<small>A LITTLE SKY FOR YOU</small></span></a>
+      <nav class="main-nav" aria-label="栏目导航">
+        <a href="#home" aria-current="location"><span class="desktop-label">首页</span><span class="mobile-label">首页</span></a>
+        <a href="#name"><span class="desktop-label">你的名字</span><span class="mobile-label">名字</span></a>
+        <a href="#running"><span class="desktop-label">那个1500米</span><span class="mobile-label">1500米</span></a>
+        <a href="#mood"><span class="desktop-label">今日心情</span><span class="mobile-label">心情</span></a>
+        <a href="#letter"><span class="desktop-label">补给你的同学录</span><span class="mobile-label">同学录</span></a>
+      </nav>
+      <span class="header-note" aria-hidden="true">给生活一点微光 <span>✦</span></span>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero section" id="home" aria-labelledby="heroTitle">
+      <picture class="section-picture hero-picture">
+        <source media="(max-width: 700px)" srcset="assets/hero-mobile.webp">
+        <img src="assets/hero-desktop.webp" width="2200" height="1238" alt="少女坐在花草间，望着蓝紫色星空，几只淡蓝色蝴蝶停留在身旁。" fetchpriority="high">
+      </picture>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content content-width">
+        <p class="eyebrow"><span class="little-line"></span> 一份来自老同学的小礼物</p>
+        <h1 id="heroTitle">把一小片星空<br>送给<span class="hero-name">酉雪云<button class="hero-butterfly" id="heroButterfly" aria-label="碰一碰名字旁的小蝴蝶"><img src="assets/butterfly.webp" alt="" width="60" height="48"></button></span></h1>
+        <p class="hero-description">有一点旧时光，<br>也有一些想送给你的好心情。</p>
+        <a class="hero-cta" href="#name">往下看看 <span aria-hidden="true">↘</span></a>
+        <p class="butterfly-secret" id="butterflySecret" role="status"></p>
+      </div>
+      <div class="hero-bottom content-width"><span>不必赶时间，慢慢看就好。</span><a href="#name" class="scroll-cue" aria-label="向下，阅读你的名字"><span aria-hidden="true">↓</span> SCROLL TO EXPLORE</a><span class="hero-page" aria-hidden="true">01 <i></i> 05</span></div>
+    </section>
+
+    <section class="name-section section sky-section" id="name" aria-labelledby="nameTitle">
+      <div class="section-body content-width">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="section-index">01 /</span> 关于你的名字 <span class="eyebrow-star" aria-hidden="true">✧</span></p>
+          <h2 id="nameTitle">你的名字，<span>像一幅风景。</span></h2>
+          <p class="section-intro">有暮色，有清雪，也有流云。<br>很喜欢这三个字放在一起的样子。</p>
+        </div>
+        <div class="name-poem reveal" role="group" aria-label="点击酉、雪、云，看看名字里的风景">
+          <button class="name-piece" data-character="you" aria-pressed="false" aria-label="酉：把傍晚的一点暖光，留在名字的开头。">
+            <span class="character-scene scene-dusk" aria-hidden="true"></span>
+            <span class="character-tag">DUSK · 暮色</span><span class="name-character">酉</span><span class="character-rule" aria-hidden="true"></span>
+            <span class="character-copy">把傍晚的一点暖光，<br>留在名字的开头。</span><span class="character-touch">轻触，留一束暮光 <span aria-hidden="true">↗</span></span>
+          </button>
+          <button class="name-piece" data-character="snow" aria-pressed="false" aria-label="雪：中间落下一笔雪，整幅画就安静了。">
+            <span class="character-scene scene-snow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="character-tag">SNOW · 清雪</span><span class="name-character">雪</span><span class="character-rule" aria-hidden="true"></span>
+            <span class="character-copy">中间落下一笔雪，<br>整幅画就安静了。</span><span class="character-touch">轻触，落一点清雪 <span aria-hidden="true">↗</span></span>
+          </button>
+          <button class="name-piece" data-character="cloud" aria-pressed="false" aria-label="云：最后添上一片云，让余韵留在天空里。">
+            <span class="character-scene scene-cloud" aria-hidden="true"></span>
+            <span class="character-tag">CLOUD · 流云</span><span class="name-character">云</span><span class="character-rule" aria-hidden="true"></span>
+            <span class="character-copy">最后添上一片云，<br>让余韵留在天空里。</span><span class="character-touch">轻触，让一片云经过 <span aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+        <div class="name-afterword reveal"><span class="tiny-spark" aria-hidden="true">✦</span><p id="nameAfterword" role="status">三个字，不长，却很有画面。</p><img id="nameButterfly" class="name-butterfly" src="assets/butterfly.webp" alt="" width="72" height="58" hidden></div>
+        <p class="name-footnote">借你的名字，画一小片风景。</p>
+      </div>
+    </section>
+
+    <section class="running-section section" id="running" aria-labelledby="runningTitle">
+      <picture class="section-picture running-picture">
+        <source media="(max-width: 700px)" srcset="assets/running-mobile.webp">
+        <img src="assets/running-desktop.webp" width="1536" height="864" alt="校园运动会主题插画：穿运动服的女生沿红色跑道向前奔跑，远处是教学楼和其他参赛同学。" loading="lazy">
+      </picture>
+      <div class="running-shade" aria-hidden="true"></div>
+      <div class="running-content content-width">
+        <div class="running-copy reveal">
+          <p class="eyebrow"><span class="section-index">02 /</span> 那个1500米</p>
+          <h2 id="runningTitle">有一件小事，<br>我还记得。</h2>
+          <p class="running-context">初中校运会 · 女子1500米</p>
+          <div class="running-result"><span class="distance">1500<span>米</span></span><span class="result-divider" aria-hidden="true"></span><span class="ranking"><small>那次的成绩</small>第四名</span></div>
+          <p class="running-description">那场校运会的这个成绩，<br>到现在，我还记得。<br><span>愿你往后的每一程，<br>都能找到自己的节奏。</span></p>
+          <div class="track-wrap" aria-label="一条象征1500米旅程的光点跑道">
+            <div class="track-top"><span>这一程，慢慢向前</span><button id="replayRun" aria-label="让光点再跑一程">再跑一程 <span aria-hidden="true">↻</span></button></div>
+            <div class="mini-track" id="miniTrack"><div class="track-fill" id="trackFill"></div><span class="track-runner" id="trackRunner" aria-hidden="true"></span><i></i><i></i><i></i><i></i></div>
+            <div class="track-labels"><span>起点</span><span>500m</span><span>1000m</span><span>1500m</span></div>
+            <p class="track-note" id="trackNote" aria-live="polite">这一页，留给那个跑过终点的你。</p>
+          </div>
+        </div>
+      </div>
+      <p class="illustration-note">校园记忆的插画，不是当年的现场照片。</p>
+    </section>
+
+    <section class="mood-section section sky-section" id="mood" aria-labelledby="moodTitle">
+      <div class="section-body content-width">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="section-index">03 /</span> 今日心情 <span class="eyebrow-star" aria-hidden="true">✧</span></p>
+          <h2 id="moodTitle">今天，<span>心情怎么样？</span></h2>
+          <p class="section-intro">给今天选一个表情，<br>也给自己一点小小的好心情。</p>
+        </div>
+        <div class="mood-card reveal">
+          <div class="mood-card-top"><span><i aria-hidden="true"></i> 今日份心情补给</span><span class="mood-card-star" aria-hidden="true">✧</span></div>
+          <div class="mood-field" id="moodField">
+            <button class="mood-choice happy-choice" id="happyButton" aria-label="今天开心，收下好心情"><span class="mood-face happy-face" id="happyFace" aria-hidden="true">😊</span><span class="mood-choice-label">开心</span></button>
+            <div class="unhappy-cluster" id="unhappyCluster">
+              <button class="mood-choice unhappy-choice" id="unhappyButton" aria-label="今天不开心，把烦恼缩小一点"><span class="mood-face unhappy-face" id="unhappyFace" aria-hidden="true">🙁</span><span class="mood-choice-label" id="unhappyLabel">不开心</span></button>
+              <p class="mood-message" id="moodMessage" aria-hidden="true">点一下，把烦恼放小一点。</p>
+            </div>
+            <div class="mood-success" id="moodSuccess" hidden>
+              <img class="success-butterfly butterfly-left" src="assets/butterfly.webp" alt="" width="58" height="47">
+              <span class="success-face" aria-hidden="true">😊</span><p class="success-kicker">好心情，已送达</p>
+              <h3>记得每天都要开心哦。</h3><p class="success-copy">不过，偶尔不开心也没关系。<br>希望这个小把戏，能让你笑一下。</p>
+              <button class="reset-mood" id="resetMood">再玩一次 <span aria-hidden="true">↻</span></button>
+              <img class="success-butterfly butterfly-right" src="assets/butterfly.webp" alt="" width="70" height="56">
+            </div>
+          </div>
+          <div class="mood-card-bottom"><span class="tiny-spark" aria-hidden="true">✦</span><p>心情没有标准答案。这个小把戏，只是想逗你笑一下。</p></div>
+          <p class="sr-only" id="moodAnnouncement" role="status"></p>
+          <noscript><p class="noscript-note">这个小互动需要启用 JavaScript。记得每天都要开心哦，偶尔不开心也没关系。</p></noscript>
+        </div>
+        <p class="mood-footnote">不收集心情，也不催你开心。</p>
+      </div>
+    </section>
+
+    <section class="letter-section section sky-section" id="letter" aria-labelledby="letterTitle">
+      <div class="section-body content-width">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="section-index">04 /</span> 补给你的同学录 <span class="eyebrow-star" aria-hidden="true">✧</span></p>
+          <h2 id="letterTitle">补给你，<span>一页同学录。</span></h2>
+          <p class="section-intro">把当时没交到你手上的那一页，<br>认真补在这里。</p>
+        </div>
+        <details class="letter-details reveal" id="letterDetails">
+          <summary class="envelope-toggle">
+            <span class="envelope" aria-hidden="true">
+              <span class="envelope-back"></span><span class="envelope-peek"><span>一页同学录</span></span>
+              <span class="envelope-front"></span><span class="envelope-flap"></span>
+              <span class="envelope-address">酉雪云<span>亲启</span></span>
+              <span class="envelope-seal"><img src="assets/butterfly.webp" alt="" width="47" height="38"></span>
+              <span class="envelope-postmark">CLASSMATE NOTES<br><span>✧</span> JUST FOR YOU</span>
+            </span>
+            <span class="envelope-action"><span class="closed-label">拆开这份同学录 <span aria-hidden="true">↗</span></span><span class="opened-label">把同学录收好 <span aria-hidden="true">↙</span></span></span>
+          </summary>
+          <article class="letter-paper record-sheet" aria-labelledby="paperTitle">
+            <header class="record-cover">
+              <div class="record-cover-top"><span>CLASSMATE NOTES</span><span class="record-draft" id="recordDraft" hidden>内容待填写</span></div>
+              <p class="record-for">TO · 酉雪云</p>
+              <h3 id="paperTitle">补给你的一页同学录</h3>
+              <p class="record-cover-caption">关于我，也关于想留给你的话。</p>
+              <img class="record-cover-butterfly" src="assets/butterfly.webp" alt="" width="76" height="58" loading="lazy">
+              <span class="record-cover-rule" aria-hidden="true"></span>
+            </header>
+
+            <div class="record-card-grid">
+              <section class="record-card about-card" aria-labelledby="aboutCardTitle">
+                <div class="record-card-heading"><span class="record-card-number" aria-hidden="true">01</span><h4 id="aboutCardTitle">关于我</h4><span class="record-heading-spark" aria-hidden="true">✧</span></div>
+                <dl class="record-fields about-fields">
+                  <div class="record-field record-name-field"><dt>姓名</dt><dd data-record-field="name">朱嘉润</dd></div>
+                  <div class="record-field"><dt>昵称／以前的绰号</dt><dd data-record-field="nickname">猪头，狗不理</dd></div>
+                  <div class="record-field"><dt>生日</dt><dd data-record-field="birthday">7.26</dd></div>
+                  <div class="record-field"><dt>星座</dt><dd data-record-field="zodiac">狮子座</dd></div>
+                </dl>
+              </section>
+
+              <section class="record-card profile-card" aria-labelledby="profileCardTitle">
+                <div class="record-card-heading"><span class="record-card-number" aria-hidden="true">02</span><h4 id="profileCardTitle">我的小档案</h4><span class="record-heading-spark" aria-hidden="true">✧</span></div>
+                <dl class="record-fields profile-fields">
+                  <div class="record-field"><dt>兴趣爱好</dt><dd data-record-field="hobbies">吃，听歌，看小说</dd></div>
+                  <div class="record-field"><dt>喜欢的颜色</dt><dd data-record-field="color">没有特别喜欢的，可能会偏爱一点紫色</dd></div>
+                  <div class="record-field"><dt>喜欢的食物</dt><dd data-record-field="food">想吃尽天底所有豆腐</dd></div>
+                  <div class="record-field"><dt>喜欢的动物</dt><dd data-record-field="animal">cat</dd></div>
+                  <div class="record-field"><dt>喜欢的运动</dt><dd data-record-field="sport">排球</dd></div>
+                  <div class="record-field"><dt>想分享的一首歌</dt><dd data-record-field="song">天龙八部之宿敌</dd></div>
+                </dl>
+              </section>
+
+              <section class="record-card message-card" aria-labelledby="messageCardTitle">
+                <div class="record-card-heading"><span class="record-card-number" aria-hidden="true">03</span><h4 id="messageCardTitle">留给你的话</h4><span class="record-heading-spark" aria-hidden="true">✧</span></div>
+                <dl class="record-fields message-fields">
+                  <div class="record-field record-message-block"><dt>想对你说的话</dt><dd data-record-field="message">hallow，酉雪云，很高兴给你写同学录，我们初中交流不多，但遇见即是缘分，所以很高兴我们能成为同学啦！
+
+其实在我心里，我一直觉得你很好看，笑起来尤其好看（说谎的人出门被狗咬哦），印象中你很爱笑，跟谁说话都是笑着的，但我不知道你是不是真的开心，偶尔不开心也没关系，不用每天都要求自己笑着，但我希望你每天都开心一点 😊。
+
+还有当时运动会，那一刻在我心里你是我们班最棒哒，我没记错的话好像是第四名来着（如果记错了求原谅并指正一下），我可是一直在为你加油的，所以你自己也真的很了不起呀！！
+
+告诉你个秘密，我会穿越，5年后你就是个贪吃鬼，胃口比我还大，哈哈哈，不过吃货的世界我不懂呢，或许是缘分使然，2025年12月29号我QQ号被盗了，但我们也因此无话不谈，所以或许有失真的也有得，我很珍惜这份友谊，你也一定是的吧</dd></div>
+                  <div class="record-field record-message-block blessing-block"><dt>送给你的祝福</dt><dd data-record-field="blessing">祝你越来越好看，能吃会道，愿我们都能成为生活的高手吧</dd></div>
+                </dl>
+              </section>
+
+              <section class="record-card sign-card" aria-labelledby="signCardTitle">
+                <div class="record-card-heading"><span class="record-card-number" aria-hidden="true">04</span><h4 id="signCardTitle">落款</h4><span class="record-heading-spark" aria-hidden="true">✧</span></div>
+                <dl class="record-fields sign-fields">
+                  <div class="record-field"><dt>署名</dt><dd data-record-field="signature">朱嘉润</dd></div>
+                  <div class="record-field"><dt>填写日期</dt><dd data-record-field="date">2026年10月18日</dd></div>
+                </dl>
+              </section>
+            </div>
+            <footer class="record-bottom"><span>这一页，交给你保存。</span><span aria-hidden="true">✦</span></footer>
+          </article>
+        </details>
+        <p class="letter-undertext">一页同学录，装进这片星空里。</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer content-width"><a href="#home" class="footer-brand">酉雪云 <span aria-hidden="true">✧</span></a><p>一小片星空 · 一份来自老同学的小礼物</p><a href="#home" class="back-top">回到星空 <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
